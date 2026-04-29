@@ -24,6 +24,16 @@ export const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#151517',
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'flex-start',
   },
+   rodape: {
+    backgroundColor: "#333",
+    height: 60,
+    width: "100%",
+    justifyContent: "center",
+    alignItems: "center"
+  },
+  textoRodape: {
+    color: "#fff"
+  }
 });
