@@ -10,8 +10,11 @@ const estilosCabecalho = StyleSheet.create({
     width: "100vw",
     display: "flex",
     flexDirection: "row",
-    alignContent: "center",
+    alignItems: "center",
+    justifyContent: "center",
     padding: "0px auto",
+    marginBottom: "20px",
+    marginTop: "0px",
   },
   botaoCabecalho: {
     backgroundColor: "#111",
@@ -37,9 +40,9 @@ export default function Cabecalho({
         style={() => [
           estilosCabecalho.botaoCabecalho,
           {
-            backgroundColor: selecionado !== "principal" ?
-              "#111" :
-              "#246"
+            backgroundColor: selecionado === "principal" ?
+              "#246" :
+              "#111"
           }
         ]}
         onPress={() => {
@@ -53,9 +56,9 @@ export default function Cabecalho({
         style={() => [
           estilosCabecalho.botaoCabecalho,
           {
-            backgroundColor: selecionado === "principal" ?
-              "#111" :
-              "#246"
+            backgroundColor: selecionado === "sobreEquipe" ?
+              "#246" :
+              "#111"
           }
         ]}
         onPress={() => {

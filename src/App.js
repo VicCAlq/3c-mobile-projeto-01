@@ -3,6 +3,7 @@ import { useState } from 'react'
 import { styles } from './styles/main';
 import { Text, View } from 'react-native';
 import Cabecalho from './components/Cabecalho';
+import Rodape from './components/Rodape';
 
 export default function App() {
 
@@ -23,7 +24,15 @@ export default function App() {
         }
         mudarPagina={setConteudo}
       />
-      {conteudo}
+      <view Rodape={{ flex: 1}}>
+        {conteudo}
+      </view>
+
+      <Rodape />
+    
+    
+
       <StatusBar style="auto" />
     </View>
   );
+}
