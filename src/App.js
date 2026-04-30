@@ -23,8 +23,10 @@ export default function App() {
         }
         mudarPagina={setConteudo}
       />
+     
       {conteudo}
       <StatusBar style="auto" />
     </View>
   );
 }
+

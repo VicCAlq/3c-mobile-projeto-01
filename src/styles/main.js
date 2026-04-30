@@ -5,14 +5,14 @@ export const styles = StyleSheet.create({
     display: 'flex',
   },
   texto: {
-    color: '#ddd',
+    color: '#3e2e72ff',
     fontFamily: 'sans',
   },
   botaoExemplo: {
-    backgroundColor: '#252730',
+    backgroundColor: '#435088ff',
     color: '#cdd',
     borderRadius: '10px',
-    border: '0px solid #252730',
+    border: '0px solid #2e3b77ff',
     cursor: 'pointer',
     flex: 1,
     alignItems: 'center',
@@ -22,7 +22,7 @@ export const styles = StyleSheet.create({
   },
   container: {
     flex: 1,
-    backgroundColor: '#151517',
+    backgroundColor: '#bcbcf8ff',
     alignItems: 'center',
     justifyContent: 'center',
   },
