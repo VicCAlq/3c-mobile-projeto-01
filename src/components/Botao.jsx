@@ -13,9 +13,11 @@ const styles = StyleSheet.create({
     }   
 })
 
-export default function Botao({img, texto, clicar}) {
+export default function Botao({img, texto, setAluno, aluno}) {
     return (
-        <Pressable onPress={clicar} style={styles.botao}>
+        <Pressable onPress={() => {
+            setAluno(aluno)
+        }} style={styles.botao}>
             <Image source={img} style = {styles.img} />
             <Text>{texto}</Text>
         </Pressable>

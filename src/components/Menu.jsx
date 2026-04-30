@@ -1,26 +1,40 @@
-import { useState } from 'react'
-import { StyleSheet } from 'react-native';
-import { View, Pressable, Text, Image } from 'react-native'
-import Botao from './Botao';
+import { View } from 'react-native'
+import Botao from './Botao'
 
-const alunos = [
-    { nome: "Aluno 1", img: require("../assets/1.png") },
-    { nome: "Aluno 2", img: require("../assets/1.png") },
-    { nome: "Aluno 3", img: require("../assets/1.png") },
-  ];
-  
-  export default function Menu() {
-    return (
-      <View>
-        {alunos.map((aluno, index) => (
-          <Botao
-            key={index}
-            img={aluno.img}
-            texto={aluno.nome}
-            onPress={() => alert(aluno.nome)}
-          />
-        ))}
-      </View>
-    );
-  }
+export default function Menu({ 
+  setAluno,
+}) {
 
+  return (
+    <View>
+
+      <Botao
+        texto="Aluno 1"
+        img={require("../../assets/1.jpg")}
+        setAluno={setAluno}
+        aluno={1}
+      />
+
+      <Botao
+        texto="Aluno 2"
+        img={require("../../assets/1.jpg")}
+        setAluno={setAluno}
+        aluno={2}
+      />
+
+      <Botao
+        texto="Aluno 3"
+        img={require("../../assets/1.jpg")}
+        setAluno={setAluno}
+        aluno={3}
+      />
+      <Botao
+        texto="Aluno 4"
+        img={require("../../assets/1.jpg")}
+        setAluno={setAluno}
+        aluno={4}
+      />
+    
+    </View>
+  )
+}
