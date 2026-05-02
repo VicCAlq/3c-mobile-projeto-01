@@ -9,28 +9,28 @@ export default function Menu({
     <View>
 
       <Botao
-        texto="Aluno 1"
-        img={require("../../assets/1.jpg")}
+        texto="Aluno "
+        img={require("../../assets/icon.png")}
         setAluno={setAluno}
         aluno={1}
       />
 
       <Botao
         texto="Aluno 2"
-        img={require("../../assets/1.jpg")}
+        img={require("../../assets/icon.png")}
         setAluno={setAluno}
         aluno={2}
       />
 
       <Botao
         texto="Aluno 3"
-        img={require("../../assets/1.jpg")}
+        img={require("../../assets/icon.png")}
         setAluno={setAluno}
         aluno={3}
       />
       <Botao
         texto="Aluno 4"
-        img={require("../../assets/1.jpg")}
+        img={require("../../assets/icon.png")}
         setAluno={setAluno}
         aluno={4}
       />
