@@ -7,21 +7,40 @@ export default function Card() {
     
     const codigoThais = <View>
         <Text>
+            Sobre a Lista de Laços 
+        </Text>
+    </View>
+
+    const codigoLaura = <View>
+        <Text>
             Códigos de Thais aqui
         </Text>
     </View>
 
-    const codigoLaura = "Texto com códigos de Laura"
-
-    const codigoGustavo = "Texto com códigos de Gustavo"
+       const codigoGustavo = <View>
+        <Text>
+            Códigos de Thais aqui
+        </Text>
+    </View>
     
-    const codigoFernanda = "Texto com códigos de Fernanda"
+       const codigoFernanda = <View>
+        <Text>
+            Códigos de Thais aqui
+        </Text>
+    </View>
 
     const [alunoSelecionado, setAlunoSelecionado] = useState("Thais")
     const [codigo, setCodigo] = useState(codigoThais)
 
     return(
-        <View>
+        <View style={{
+            display: "flex", 
+            flexDirection: "row", 
+            width: "100vw",
+            justifyContent: "flex-start",
+            padding: "20px",
+            gap: "30px",
+        }}>
             <Menu
                 alunoSelecionado={alunoSelecionado}
                 setAluno={setAlunoSelecionado}
@@ -31,11 +50,17 @@ export default function Card() {
                 codigoGustavo={codigoGustavo}
                 codigoFernanda={codigoFernanda}
             ></Menu>
-            <View>
+            <View style={{
+                maxWidth: "80vw",
+                display: "flex",
+                justifyContent: "flex-start",
+                alignItems: "flex-start",
+            }}>
                 <Text style={{color: "white"}}>
                     Códigos de {alunoSelecionado}:
                     {codigo}
                 </Text>
+
             </View>
         </View>
     )

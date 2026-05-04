@@ -7,8 +7,9 @@ const EstilosMenu = StyleSheet.create({
   menu: {
     backgroundColor: "#222",
     padding: 20,
-    margin: 20,
-    borderRadius: 10
+    marginLeft: 0,
+    borderRadius: 10,
+    width: "200px",
   },
   titulo: {
     color: "#fff",
