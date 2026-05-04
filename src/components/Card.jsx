@@ -9,6 +9,7 @@ export default function Card() {
         <Text>
             Códigos de Everton são esses
         </Text>
+        
     </View>
 
     const codigoRayane = "Texto com os códigos de Rayane"
@@ -19,7 +20,7 @@ export default function Card() {
 
     const codigoCauã = "Texto com os códigos de Cauã"
     
-    const [alunoSelecionado, setAlunoSelecionado] = useState("Thais")
+    const [alunoSelecionado, setAlunoSelecionado] = useState("")
     const [codigo, setCodigo] = useState(codigoEverton)
 
     return(

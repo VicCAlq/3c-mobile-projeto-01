@@ -4,7 +4,7 @@ import { View, Pressable, Text } from 'react-native'
 
 const estilosCabecalho = StyleSheet.create({
   cabecalho: {
-    backgroundColor: "#333",
+    backgroundColor: "#d4add4",
     margin: "0px 0px 0px auto",
     height: "70px",
     width: "100vw",

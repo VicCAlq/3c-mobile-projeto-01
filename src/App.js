@@ -8,15 +8,11 @@ import Menu from './components/Menu';
 import Card from './components/Card';
 
 export default function App() {
-  const paginaPrincipal = (
-          <Text style={styles.texto}>
-            "Sobre a equipe no futuro, aqui"
-          </Text>
-  )
+  const paginaPrincipal = <Card/>
 
    const sobreEquipe = (
           <Text style={styles.texto}>
-            "Sobre a equipe no futuro, aqui"
+            "Só sucesso no futuro"
           </Text>
   )
 
