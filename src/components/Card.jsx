@@ -44,9 +44,72 @@ export let tartarugasVoamVerdadeOuNao = "false"
 `,
 
     Manuella: `coloque os códigos aq`,
-    Renato: 'coloque os códigos aq',
-    Guilherme: 'coloque os códigos aq',
-    Chris: 'coloque os códigos aq'
+    Renato: `
+  Questão 03 - listas - muito fácil
+Continuando com o array criado na questão 1, altere o quarto item da lista para
+a fruta "abacaxi". Na variável "resposta03" envie a lista completa com a nova fruta.
+*/
+// Operações necessárias e resposta a partir da linha abaixo
+frutas[3] = "abacaxi"
+export const resposta03 = frutas
+
+  Questão 08 - funções - muito difícil
+Crie uma função chamada "buscarTravaLinguasComPalavra" que recebe uma 
+palavra como argumento e retorna uma lista (array) contendo apenas os 
+trava-línguas que possuem aquela palavra. Dica: percorra a lista com 
+um loop while, verifique se cada item inclui a palavra usando o método 
+.includes(), e adicione à nova lista apenas os que atenderem à condição. 
+Envie na resposta a função criada, sem executá-la (basta enviar 
+o nome da função sem os parênteses)
+*/
+// Escreva o código da solução abaixo:
+function buscarTravaLinguasComPalavra(palavra) {
+   let resultado = []
+   let ind2 = 0
+
+   while (ind2 < travaLinguas.length) {
+    if(travaLinguas[ind2].includes(palavra)) {
+      resultado.push(travaLinguas[ind2])
+    }
+    ind2++
+   }
+   return resultado
+} 
+export const resposta08 = buscarTravaLinguasComPalavra
+
+  Questão 02 - laços - entender muita coisa
+Utilizando um laço de repetição for, calcule quantos números ímpares existem entre
+1 e 50 (incluindo o 1 e 50). Armazene a quantidade encontrada na variável resposta02.
+*/
+// Escreva o código da solução abaixo:
+let impares = 0
+let ind2
+for (let ind2 = 1; ind2 <= 50; ind2++) {
+  if (ind2 % 2 !== 0) {
+    impares++
+  }
+}
+export const resposta02 = contadorImpares
+
+  Questão 03 - funções - não ajudou a entender nada
+Crie uma função chamada "ehPositivo" que recebe um número como argumento e 
+retorna true se o número for maior que zero, ou false caso contrário. 
+Envie na resposta a função criada, sem executá-la (basta enviar o nome 
+da função sem os parênteses)
+*/
+// Escreva o código da solução abaixo:
+function ehPositivo(number2) {
+  if (number2 > 0) {
+    return true
+  } else {
+    return false
+  }
+} 
+export const resposta03 = ehPositivo
+
+`,
+    Guilherme: `coloque os códigos aq`,
+    Chris: `coloque os códigos aq`
   }
 
   return (
