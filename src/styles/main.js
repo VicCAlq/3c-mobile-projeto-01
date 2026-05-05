@@ -24,7 +24,7 @@ export const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#151517',
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'space-between',
   },
 });
 

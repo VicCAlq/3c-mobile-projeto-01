@@ -3,17 +3,29 @@ import { StyleSheet } from 'react-native';
 import { View, Pressable, Text, Image } from 'react-native'
 
 
-const estilosCabecalho = StyleSheet.create({
-botao:
-{
-
-}
+const estilosBotao = StyleSheet.create({
+  botao: {
+    backgroundColor: "#555",
+    borderRadius: "5px",
+    margin: "10px",
+    width: "100px",
+    height: "30px",
+    padding: "5px",
+    alignItems: "center",
+    justifyContent: "center",
+    display: "flex",
+    flexDirection: "row",
+  },
+  texto: {
+    color: "#ddd",
+  }
 })
+
 export default function Botao({aluno, setAluno, imagem}) {
   return (
-   <Pressable onPress={() => setAluno(aluno)}>
-    {/* <Image source={require('../../assets/', imagem)}></Image> */}
-    <Text>{aluno}</Text>
+    <Pressable style={estilosBotao.botao} onPress={() => setAluno(aluno)}>
+      <Image source={imagem} style={{ width: "20px", height: "20px"}}/>
+      <Text>{aluno}</Text>
     </Pressable>
   )
 }
