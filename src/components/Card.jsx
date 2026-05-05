@@ -43,7 +43,64 @@ export let tartarugasVoamVerdadeOuNao = "false"
 
 `,
 
-    Manuella: `coloque os códigos aq`,
+    Manuella:
+ `Questão 3 - Listas(indices) - Fácil
+Continuando com o array criado na questão 1, altere o quarto item da lista para
+a fruta "abacaxi". Na variável "resposta03" envie a lista completa com a nova fruta.
+ Operações necessárias e resposta a partir da linha abaixo
+
+export const resposta03 = frutas
+frutas[3] = "abacaxi"
+
+
+  Questão 09 - Laços(while) - Difícil
+Seguindo com a mesma lista de nomes, crie um novo array contendo apenas os nomes
+que começam com vogal (considere A, E, I, O, U, inclusive acentuadas se houver).
+Armazene o novo array na variável resposta09.
+Escreva o código da solução abaixo:
+
+const nomesComVogais = []
+let indice9 = 0
+const vogais = ["A","E","I","O","U"]
+
+
+while(indice9 < nomes.length) {
+  let nomeGuardado = nomes[indice9];
+  let primeiraLetra = nomeGuardado[0]
+  if(vogais.includes(primeiraLetra))
+  nomesComVogais.push(nomeGuardado)
+  
+  indice9++
+}
+export const resposta09 = nomesComVogais
+
+
+  Questão 10 - Laços(for) - Ajudou a entender muita coisa
+Com a mesma lista de pets exóticos acima, use um laço de repetição for...of para
+criar um novo array contendo apenas os nomes que possuem a letra "r" em qualquer posição.
+Armazene o novo array na variável resposta10.
+
+const petsExoticos = [
+  "lagarto", "tarântula", "hamster", "cacatua", "iguana",
+  "escorpião", "sagui", "jacaré", "serpente", "camaleão"
+]
+ Escreva o código da solução abaixo:
+
+const petsComR = [];
+const letraR = "r";
+let indice10 = 0;
+
+for( let indice10 = 0; indice10 < petsExoticos.length; indice10 += 1) {
+  if(petsExoticos[indice10].includes(letraR)) {
+    petsComR.push(petsExoticos[indice10])
+  }
+}
+export const resposta10 = petsComR
+
+
+  Questão 18 - Revisão - Não ajudou a entender nada
+export let oCeuEhAzulVerdadeOuNao = true
+`,
     Renato: `
   Questão 03 - listas - muito fácil
 Continuando com o array criado na questão 1, altere o quarto item da lista para
