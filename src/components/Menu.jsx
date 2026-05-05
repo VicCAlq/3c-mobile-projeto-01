@@ -1,14 +1,22 @@
-import { View } from 'react-native';
-import Botao from './Botao';
+import { View, StyleSheet } from 'react-native'
+import Botao from './Botao'
 
-
-export default function Menu({ alunos, selecionarAluno }) {
+export default function Menu({ setAlunoSelecionado }) {
   return (
-    <View style={{ flexDirection: 'row', justifyContent: 'center', flexWrap: 'wrap' }}>
-      {alunos.map((aluno, index) => (
-        <Botao key={index} aluno={aluno} selecionarAluno={selecionarAluno} />
-      ))}
+    <View style={styles.botaoEstrutura}>
+      <Botao nome="Renan" setAluno={setAlunoSelecionado} />
+      <Botao nome="Manuella" setAluno={setAlunoSelecionado} />
+       <Botao nome="Renato" setAluno={setAlunoSelecionado} />
+        <Botao nome="Guilherme" setAluno={setAlunoSelecionado} />
+         <Botao nome="Chris" setAluno={setAlunoSelecionado} />
     </View>
-  );
+  )
 }
 
+const styles = StyleSheet.create({
+  botaoEstrutura: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    flexWrap: 'wrap'
+  },
+});
