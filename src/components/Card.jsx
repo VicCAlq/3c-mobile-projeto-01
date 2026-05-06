@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet } from 'react-native'
+import { View, Text, StyleSheet, ScrollView } from 'react-native'
 
 export default function Card({ aluno }) {
 
@@ -11,7 +11,6 @@ export default function Card({ aluno }) {
  Questão 1 - lista - muito fácil
 Crie uma lista (com const) chamado "frutas" com os itens: "maçã", "banana", "laranja", 
 "uva", "pêra", "manga". Armazene na variável "resposta01" o segundo item dessa lista.
-
 
 const frutas = ["maçã", "banana", "laranja", "uva", "pêra", "manga"]
 export const resposta01 = frutas[1]
@@ -40,86 +39,57 @@ export let noveDivididoPorTres = 3
 
  Questão 04 - revisão - não ajudou a entender nada
 export let tartarugasVoamVerdadeOuNao = "false"
-
 `,
 
-    Manuella:
- `Questão 3 - Listas(indices) - Fácil
+    Manuella: `
+Questão 3 - Listas(indices) - Fácil
 Continuando com o array criado na questão 1, altere o quarto item da lista para
 a fruta "abacaxi". Na variável "resposta03" envie a lista completa com a nova fruta.
- Operações necessárias e resposta a partir da linha abaixo
 
 export const resposta03 = frutas
 frutas[3] = "abacaxi"
 
-
-  Questão 09 - Laços(while) - Difícil
-Seguindo com a mesma lista de nomes, crie um novo array contendo apenas os nomes
-que começam com vogal (considere A, E, I, O, U, inclusive acentuadas se houver).
-Armazene o novo array na variável resposta09.
-Escreva o código da solução abaixo:
-
+Questão 09 - Laços(while) - Difícil
 const nomesComVogais = []
 let indice9 = 0
 const vogais = ["A","E","I","O","U"]
-
 
 while(indice9 < nomes.length) {
   let nomeGuardado = nomes[indice9];
   let primeiraLetra = nomeGuardado[0]
   if(vogais.includes(primeiraLetra))
-  nomesComVogais.push(nomeGuardado)
+    nomesComVogais.push(nomeGuardado)
   
   indice9++
 }
 export const resposta09 = nomesComVogais
 
-
-  Questão 10 - Laços(for) - Ajudou a entender muita coisa
-Com a mesma lista de pets exóticos acima, use um laço de repetição for...of para
-criar um novo array contendo apenas os nomes que possuem a letra "r" em qualquer posição.
-Armazene o novo array na variável resposta10.
-
+Questão 10 - Laços(for) - Ajudou a entender muita coisa
 const petsExoticos = [
   "lagarto", "tarântula", "hamster", "cacatua", "iguana",
   "escorpião", "sagui", "jacaré", "serpente", "camaleão"
 ]
- Escreva o código da solução abaixo:
 
 const petsComR = [];
 const letraR = "r";
-let indice10 = 0;
 
-for( let indice10 = 0; indice10 < petsExoticos.length; indice10 += 1) {
-  if(petsExoticos[indice10].includes(letraR)) {
-    petsComR.push(petsExoticos[indice10])
+for (let i = 0; i < petsExoticos.length; i++) {
+  if(petsExoticos[i].includes(letraR)) {
+    petsComR.push(petsExoticos[i])
   }
 }
 export const resposta10 = petsComR
 
-
-  Questão 18 - Revisão - Não ajudou a entender nada
+Questão 18 - Revisão - Não ajudou a entender nada
 export let oCeuEhAzulVerdadeOuNao = true
 `,
+
     Renato: `
-  Questão 03 - listas - muito fácil
-Continuando com o array criado na questão 1, altere o quarto item da lista para
-a fruta "abacaxi". Na variável "resposta03" envie a lista completa com a nova fruta.
-*/
-// Operações necessárias e resposta a partir da linha abaixo
+Questão 03 - listas - muito fácil
 frutas[3] = "abacaxi"
 export const resposta03 = frutas
 
-  Questão 08 - funções - muito difícil
-Crie uma função chamada "buscarTravaLinguasComPalavra" que recebe uma 
-palavra como argumento e retorna uma lista (array) contendo apenas os 
-trava-línguas que possuem aquela palavra. Dica: percorra a lista com 
-um loop while, verifique se cada item inclui a palavra usando o método 
-.includes(), e adicione à nova lista apenas os que atenderem à condição. 
-Envie na resposta a função criada, sem executá-la (basta enviar 
-o nome da função sem os parênteses)
-*/
-// Escreva o código da solução abaixo:
+Questão 08 - funções - muito difícil
 function buscarTravaLinguasComPalavra(palavra) {
    let resultado = []
    let ind2 = 0
@@ -134,27 +104,17 @@ function buscarTravaLinguasComPalavra(palavra) {
 } 
 export const resposta08 = buscarTravaLinguasComPalavra
 
-  Questão 02 - laços - entender muita coisa
-Utilizando um laço de repetição for, calcule quantos números ímpares existem entre
-1 e 50 (incluindo o 1 e 50). Armazene a quantidade encontrada na variável resposta02.
-*/
-// Escreva o código da solução abaixo:
+Questão 02 - laços - entender muita coisa
 let impares = 0
-let ind2
-for (let ind2 = 1; ind2 <= 50; ind2++) {
-  if (ind2 % 2 !== 0) {
+
+for (let i = 1; i <= 50; i++) {
+  if (i % 2 !== 0) {
     impares++
   }
 }
-export const resposta02 = contadorImpares
+export const resposta02 = impares
 
-  Questão 03 - funções - não ajudou a entender nada
-Crie uma função chamada "ehPositivo" que recebe um número como argumento e 
-retorna true se o número for maior que zero, ou false caso contrário. 
-Envie na resposta a função criada, sem executá-la (basta enviar o nome 
-da função sem os parênteses)
-*/
-// Escreva o código da solução abaixo:
+Questão 03 - funções - não ajudou a entender nada
 function ehPositivo(number2) {
   if (number2 > 0) {
     return true
@@ -163,16 +123,88 @@ function ehPositivo(number2) {
   }
 } 
 export const resposta03 = ehPositivo
-
 `,
+
     Guilherme: `coloque os códigos aq`,
-    Chris: `coloque os códigos aq`
+    
+    Chris: `Fácil - listas: exercício 1
+/* Questão 3
+Continuando com o array criado na questão 1, altere o quarto item da lista para
+a fruta "abacaxi". Na variável "resposta03" envie a lista completa com a nova fruta.
+*/
+// Operações necessárias e resposta a partir da linha abaixo
+export const resposta03 = frutas
+frutas[3] = "abacaxi"
+
+Difícil - laços, exercício 2
+/* Questão 12
+Encerrando com a lista de pets exóticos, use um laço de repetição for...of para
+encontrar o primeiro nome que começa com a letra "s". Se encontrar, armazene este
+nome na variável resposta12. Se não encontrar nenhum, armazene a string "não encontrado".
+
+const petsExoticos = [
+  "lagarto", "tarântula", "hamster", "cacatua", "iguana",
+  "escorpião", "sagui", "jacaré", "serpente", "camaleão"
+]
+*/
+// Escreva o código da solução abaixo:
+let nomeQueComecaComS = ""
+for(let nome of petsExoticos){
+  if(nome[0] == "s"){
+    nomeQueComecaComS = nome
+    break
+  } else{
+    nomeQueComecaComS = "não encontrado"
+  }
+}
+export const resposta12 = nomeQueComecaComS
+
+Entender algo - funções, exercício 1
+/* Questão 12
+Crie uma função chamada "elementosComNumeroPar" que recebe a lista 
+"elementos" como argumento e retorna uma nova lista contendo apenas 
+os elementos (objetos completos) cujo número atômico é par. Envie na 
+resposta a função criada, sem executá-la (basta enviar o nome da 
+função sem os parênteses)
+*/
+// Escreva o código da solução abaixo:
+function elementosComNumeroPar(elementos){
+  const novaLista = []
+  let indice6 = 0
+  while(indice6<elementos.length){
+    if(elementos[indice6].numeroAtomico % 2 == 0){
+        novaLista.push(elementos[indice6])
+    }
+    indice6++
+  }
+  return novaLista
+}
+export const resposta12 = elementosComNumeroPar
+
+Entender nada - lista, exercício 2
+/* Questão 13
+Seguindo com a lista de pedras, use os métodos shift e pop para mover os três
+primeiros itens para o final da lista. Após isso, aplique o método reverse, e
+envie a lista na resposta13.
+*/
+// Operações necessárias e resposta a partir da linha abaixo
+
+pedras.push(pedras.shift())
+pedras.push(pedras.shift())
+pedras.push(pedras.shift())
+
+pedras.reverse()
+export const resposta13 = pedras`
   }
 
   return (
     <View style={styles.card}>
       <Text style={styles.titulo}>Códigos de {aluno}</Text>
-      <Text style={styles.codigo}>{dados[aluno]}</Text>
+
+      <ScrollView style={styles.scroll} showsVerticalScrollIndicator={true}>
+        <Text style={styles.codigo}>{dados[aluno]}</Text>
+      </ScrollView>
+
     </View>
   )
 }
@@ -183,7 +215,12 @@ const styles = StyleSheet.create({
     padding: 15,
     backgroundColor: '#f8f9ff',
     borderRadius: 12,
-    elevation: 4, // sombra Android
+    elevation: 4,
+    maxHeight: 400, 
+  },
+
+  scroll: {
+    marginTop: 5,
   },
 
   titulo: {
@@ -200,14 +237,15 @@ const styles = StyleSheet.create({
     borderRadius: 8,
     fontFamily: 'monospace',
   },
-aviso: {
-  textAlign: 'center',
-  marginTop: 20,
-  marginHorizontal: 20,
-  padding: 10,
-  color: '#fff',
-  backgroundColor: '#575757',
-  borderRadius: 8,
-  fontSize: 14,
-}
+
+  aviso: {
+    textAlign: 'center',
+    marginTop: 20,
+    marginHorizontal: 20,
+    padding: 10,
+    color: '#fff',
+    backgroundColor: '#575757',
+    borderRadius: 8,
+    fontSize: 14,
+  }
 })
