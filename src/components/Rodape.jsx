@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
 export default function Rodape() {
   return (
     <View style = {styles.rodape}>
-        <Text> Criado por: </Text>
+        <Text> Criado por:samuel,calebe,carlos felipe,leonardo </Text>
     </View>
   );
 }
