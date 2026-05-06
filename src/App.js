@@ -6,6 +6,7 @@ import Cabecalho from './components/cabecalho';
 import Rodape from './components/Rodape';
 import Menu from './components/Menu';
 import Card from './components/Card';
+import Conteudo from './components/conteudo';
 
 export default function App() {
 
@@ -17,7 +18,7 @@ export default function App() {
         paginaPrincipal={<Card/>}
         sobreEquipe={
           <Text style={styles.texto}>
-            "Sobre a equipe futuramente aqui"
+            Nome da equipe:Thay, fez os componentes botão e ajudou no cabeçalho, Laura: fez os componentes card, Gustavo: fez o componentes Menu e e ajudou no botão, Fernanda: fez o compenente cabecalho e fez o sobre sobre equipe 
           </Text>
         }
         mudarPagina={setConteudo}
