@@ -15,7 +15,7 @@ const estilosCard = StyleSheet.create({
   },
    texto: {
     fontSize: "16px",
-    width: '1200px',
+    width: '35%',
     
 
   }
