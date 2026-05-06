@@ -190,7 +190,7 @@ export const resposta10 = buscarPorNumeroAtomico
    
 `,
     
-    Chris: `Fácil - listas: exercício 1
+    Izabella: `Fácil - listas: exercício 1
 /* Questão 3
 Continuando com o array criado na questão 1, altere o quarto item da lista para
 a fruta "abacaxi". Na variável "resposta03" envie a lista completa com a nova fruta.

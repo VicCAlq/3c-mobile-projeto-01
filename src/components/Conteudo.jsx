@@ -43,6 +43,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     flexWrap: 'wrap',
     justifyContent: 'center',
+     marginTop: 250,
   },
 
   card: {
@@ -63,6 +64,6 @@ const styles = StyleSheet.create({
 
   funcao: {
     fontSize: 12,
-    color: '#555',
+    color: '#231549ff',
   }
 });
