@@ -1,17 +1,37 @@
 import { StatusBar } from 'expo-status-bar';
-import { styles } from './src/styles/main';
+import { useState } from 'react'
+import { styles } from './styles/main';
 import { Text, View } from 'react-native';
-import Exemplo from './src/components/Exemplo';
+import Cabecalho from './components/cabecalho';
+import Rodape from '. /components/rodape';
+import Card from './components/card';
+import Botao from './components/ botao';
+import Menu from './components/ menu';
 
 export default function App() {
+
+  const [conteudo, setConteudo] = useState(<Card/>)
+
   return (
     <View style={styles.container}>
-      <Exemplo titulo={'Elemento exemplo'}>
-        <Text style={styles.texto}>Aqui dentro deste elemento exemplo pode ter qualquer coisa</Text>
-      </Exemplo>
-      <Text style={styles.texto}>Open up App.js to start working on your app!</Text>
+      
+      <Cabecalho
+        paginaPrincipal={<Card/>}
+        sobreEquipe={
+          <Text style={styles.texto}>
+            Sobre a equipe futuramente aqui
+          </Text>
+        }
+        mudarPagina={setConteudo}
+      />
+
+      <View style={{ flex: 1 }}>
+        {conteudo}
+      </View>
+
+      <Rodape />
+
       <StatusBar style="auto" />
     </View>
   );
 }
-
