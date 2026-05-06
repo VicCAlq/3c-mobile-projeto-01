@@ -11,7 +11,23 @@ const styles = StyleSheet.create({
 })
  export default function Card({ aluno }) {
 
-  const codigo1 = <Text style={styles.text}>Código aluno 1</Text>
+  const codigo1 = <Text style={styles.text}>{`'MUITO FÁCIL:
+Cria um array chamado frutas com vários nomes de frutas. Depois, pega o segundo item da lista (índice 1, que é "banana") e guarda na variável resposta01.
+
+MUITO DIFÍCIL:
+Pega uma lista chamada numeros e troca algumas posições entre si:
+
+O segundo item vai para a quarta posição
+O quarto item vai para a sexta posição
+O sexto item vai para a segunda posição
+
+Para isso, usa variáveis temporárias (tempA, tempB, tempC) para não perder os valores durante a troca. No final, retorna a lista modificada em resposta09.
+
+ENTENDER MUITA COISA:
+Cria um array numeros com vários valores. Depois, multiplica o primeiro número (índice 0) pelo penúltimo número (usando numeros.length - 2). O resultado dessa multiplicação é guardado na variável resposta06.
+
+ENTENDER NADA:
+Cria uma função chamada saudacao que não recebe nenhum parâmetro e apenas retorna a frase "Bom dia!". Depois, exporta a função (sem executar ela, ou seja, sem usar parênteses).`}</Text>
   const codigo2 = <Text style={styles.text}>{`MUITO OPERADORES ARITMÉTICOS)
 /* Questão 01 */
 export const trintaENove = 44 - 10 + 5 
@@ -55,7 +71,25 @@ frutas[2] = frutas[5]
 frutas[5] = temp
 export const resposta05 = frutas
 `}</Text>
-  const codigo3 = <Text style={styles.text}>Código aluno 3</Text>
+  const codigo3 = <Text style={styles.text}>{`
+**1. MAIS DIFÍCIL**
+Crie uma função chamada buscarTravaLinguasComPalavra que recebe uma palavra como argumento. Dentro dela, existe uma lista de trava-línguas. A função percorre essa lista com um loop while, verifica se cada frase inclui a palavra usando .includes() e, se incluir, adiciona à lista resultado. No final, retorna essa nova lista com os trava-línguas filtrados.
+
+---
+
+**2. A MAIS FÁCIL**
+Crie uma lista chamada frutas com os itens: maçã, banana, laranja, uva, pêra e manga. Depois, armazene na variável resposta01 o segundo item da lista, que é banana.
+
+---
+
+**3. A QUE AJUDOU A APRENDER ALGO**
+Crie uma lista vazia chamada profissoes usando const. Em seguida, utilize o método push para adicionar: programador(a), designer, engenheiro(a), veterinário(a) e administrador(a). Depois disso, armazene essa lista completa na variável resposta01.
+
+---
+
+**4. A QUE NÃO AJUDOU EM NADA**
+Utilizando a lista de profissões, use o método pop para remover o último item da lista. Armazene esse item removido em uma variável chamada resposta02.
+`}</Text>
   const codigo4 = <Text style={styles.text}>{`1. Crie um laço de repetição while que armazene em uma variável a soma dos números
 de 1 a 32. Envie o valor resultante na variável resposta01.
 
