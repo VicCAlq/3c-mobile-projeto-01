@@ -10,14 +10,14 @@ export default function Menu({
 
       <Botao
         texto="Samuel Guilherme"
-        img={require("")}
+        img={require("../../assets/samuel.jpeg")}
         setAluno={setAluno}
         aluno={1}
       />
 
       <Botao
         texto="Carlos Felipe"
-        img={require("")}
+        img={require("../../assets/felpe.jpeg")}
         setAluno={setAluno}
         aluno={2}
       />
@@ -30,7 +30,7 @@ export default function Menu({
       />
       <Botao
         texto="Calebe Aubertino"
-        img={require("")}
+        img={require("../../assets/calebe.jpeg")}
         setAluno={setAluno}
         aluno={4}
       />
