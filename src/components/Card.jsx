@@ -125,7 +125,70 @@ function ehPositivo(number2) {
 export const resposta03 = ehPositivo
 `,
 
-    Guilherme: `coloque os códigos aq`,
+    Guilherme: `
+    Questão 02 - listas - Fácil
+  Ainda utilizando o array criado na questão 1, armazene na variável "resposta02"
+o último item da lista. Use a propriedade "length" para auxiliar a encontrar
+o índice deste último item.
+*/
+// Operações necessárias e resposta a partir da linha abaixo
+export const resposta02 = frutas[frutas.length - 1] 
+
+    Questão 02 - laços - Difícil
+  Utilizando um laço de repetição for, calcule quantos números ímpares existem entre
+1 e 50 (incluindo o 1 e 50). Armazene a quantidade encontrada na variável resposta02.
+*/
+// Escreva o código da solução abaixo:
+let impares = 0
+let ind2
+for (let ind2 = 1; ind2 <= 50; ind2++) {
+  if (ind2 % 2 !== 0) {
+    impares++
+  }
+}
+export const resposta02 = contadorImpares
+
+    Questão 12 - funções - ajudou a entender
+Crie uma função chamada "elementosComNumeroPar" que recebe a lista 
+"elementos" como argumento e retorna uma nova lista contendo apenas 
+os elementos (objetos completos) cujo número atômico é par. Envie na 
+resposta a função criada, sem executá-la (basta enviar o nome da 
+função sem os parênteses)
+*/
+// Escreva o código da solução abaixo:
+function elementosComNumeroPar(elementos){
+  let yuta = []
+  for(let rika = 0; rika < elementos.length; rika++ ){
+    if(elementos[rika].numeroAtomico % 2 === 0){
+      yuta.push(elementos[rika])
+    }
+  }
+  return yuta
+}
+export const resposta12 = elementosComNumeroPar
+
+
+   Questão 10 - laços - não ajudou a entender
+  Crie uma função chamada "buscarPorNumeroAtomico" que recebe dois 
+argumentos: a lista "elementos" e um número atômico. A função deve 
+retornar o objeto do elemento que possui aquele número atômico, 
+ou null se não encontrar. Envie na resposta a função criada, sem 
+executá-la (basta enviar o nome da função sem os parênteses)
+*/
+// Escreva o código da solução abaixo:
+function buscarPorNumeroAtomico(elementos, numeroAtomico){
+  for(let z = 0; z < elementos.length; z++){
+    if(elementos[z].numeroAtomico === numeroAtomico){
+      return elementos[z]
+    }
+  else{
+    return null
+  }
+}
+}
+export const resposta10 = buscarPorNumeroAtomico
+   
+`,
     
     Chris: `Fácil - listas: exercício 1
 /* Questão 3
