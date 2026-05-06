@@ -34,13 +34,7 @@ export default function Card() {
         Uma questão que achou muito fácil:
       </Text>
       <Text style={estilosCard.texto}>
-        1. Exercício 1 de listas, questão 8
-        let a1 = animais.pop()
-        animais.unshift(a1)
-        a1 = animais.pop()
-        animais.unshift(a1)
-        a1 = animais.pop()
-        animais.unshift(a1)
+        1. Exercício 1 de listas, questão 8  
       </Text>
       <Text style={estilosCard.titulo}>
         Uma questão que achou muito difícil:

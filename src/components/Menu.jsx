@@ -6,7 +6,7 @@ export default function Menu({setAluno}) {
     const imagemAlice = require("../../assets/alice.png")
     const imagemBeatriz = require("../../assets/beatriz.png")
     const imagemEloiza = require("../../assets/eloiza.png")
-    const imagemGabriel = require("../../assets/splash-icon.png")
+    const imagemGabriel = require("../../assets/gabriel.png")
     const imagemLuisa = require("../../assets/luisa.png")
 
     return (
