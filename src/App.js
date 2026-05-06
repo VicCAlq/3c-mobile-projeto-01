@@ -12,7 +12,7 @@ export default function App() {
 
    const sobreEquipe = (
           <Text style={styles.texto}>
-            "Só sucesso no futuro"
+            "Feito pelo time 5,"OS GAMA".Composto por Cauã Juan, Everton, Helena, Rayane e Pablo. Nessa atividade, separamos os códigos ds conteudos do trimestre que achamos mais fácil,dificil, o que nos ajudou e não ajudou. Só sucesso no futuro."
           </Text>
   )
 
