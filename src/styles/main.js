@@ -6,10 +6,10 @@ export const styles = StyleSheet.create({
   },
   texto: {
     color: '#ddd',
-    fontFamily: 'sans',
+    fontFamily: 'Arial',
   },
   botaoExemplo: {
-    backgroundColor: '#252730',
+    backgroundColor: '#091642',
     color: '#cdd',
     borderRadius: '10px',
     border: '0px solid #252730',
@@ -22,9 +22,10 @@ export const styles = StyleSheet.create({
   },
   container: {
     flex: 1,
-    backgroundColor: '#151517',
+    backgroundColor: '#B7E0A3',
     alignItems: 'center',
     justifyContent: 'space-between',
   },
 });
+
 

@@ -3,16 +3,15 @@ import { View, Text } from 'react-native';
 import Botao from './Botao';
 
 export default function Menu({setAluno}) {
-
-    const imagemAlice = require("../../assets/favicon.png")
-    const imagemBeatriz = require("../../assets/adaptive-icon.png")
-    const imagemEloiza = require("../../assets/icon.png")
+    const imagemAlice = require("../../assets/alice.png")
+    const imagemBeatriz = require("../../assets/beatriz.png")
+    const imagemEloiza = require("../../assets/eloiza.png")
     const imagemGabriel = require("../../assets/splash-icon.png")
-    const imagemLuisa = require("../../assets/favicon.png")
+    const imagemLuisa = require("../../assets/luisa.png")
 
     return (
         <View style={{
-            backgroundColor: "#8da",
+            backgroundColor: "#EFE9AE",
             borderRadius: "15px",
             margin: "10px",
             padding: "10px",

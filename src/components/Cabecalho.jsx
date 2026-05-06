@@ -4,7 +4,7 @@ import { View, Pressable, Text } from 'react-native'
 
 const estilosCabecalho = StyleSheet.create({
   cabecalho: {
-    backgroundColor: '#333',
+    backgroundColor: '#7e638c',
     marginBottom: "20px",
     marginTop: "0px",
     display: 'flex',
@@ -15,7 +15,7 @@ const estilosCabecalho = StyleSheet.create({
   },
   botaoCabecalho: {
     backgroundColor: "#359",
-    color: "white",
+    color: "black",
     padding: '10px',
     borderRadius: '10px',
     margin: '10px',
@@ -33,8 +33,8 @@ export default function Cabecalho({
         estilosCabecalho.botaoCabecalho,
         {
           backgroundColor: selecionado === "principal"
-          ? "#395"
-          : "#359"
+            ? "#fffad3"
+            : "#f6e3539f"
         }
       ]}
       onPress={() => {
@@ -49,8 +49,8 @@ export default function Cabecalho({
         estilosCabecalho.botaoCabecalho,
         {
           backgroundColor: selecionado === "sobreEquipe"
-          ? "#395"
-          : "#359"
+            ? "#fffad3"
+            : "#f6e3539f"
         }
       ]}
       onPress={() => {

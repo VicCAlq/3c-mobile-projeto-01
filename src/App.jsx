@@ -6,6 +6,8 @@ import Cabecalho from './components/Cabecalho';
 import Botao from './components/Botao';
 import Card from './components/Card';
 import Conteudo from './components/Conteudo';
+import Rodape from './components/Rodape';
+
 
 export default function App() {
 
@@ -26,11 +28,16 @@ export default function App() {
         {conteudo}
       </View>
       <View style={{
+        
         width: "100vw",
         height: "40px",
-        backgroundColor: "#486"
+        alignContent: "center",
+        justifyContent: "center",
+        display: "flex",
+        backgroundColor: "#7e638c"
+       
       }}>
-
+        <Rodape />
       </View>
       <StatusBar style="auto" />
     </View>

@@ -5,7 +5,7 @@ import { View, Pressable, Text, Image } from 'react-native'
 
 const estilosBotao = StyleSheet.create({
   botao: {
-    backgroundColor: "#555",
+    backgroundColor: "#FEC3A6",
     borderRadius: "5px",
     margin: "10px",
     width: "100px",
