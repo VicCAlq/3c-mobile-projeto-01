@@ -11,22 +11,18 @@ export default function Conteudo() {
     <View>
 
       <Text style = {styles.texto}>
-        Carlos: Programou o componente Menu
+        Carlos Felipe: Editou o componente Menu.
       </Text>
       <Text style = {styles.texto}>
-        Carlos: Programou o componente Menu
+        Calebe Aubertino: Editou o componente Conteudo.
       </Text>
       <Text style = {styles.texto}>
-        Carlos: Programou o componente Menu
+        Leonardo Aragão: Editou o Rodape.
       </Text>
       <Text style = {styles.texto}>
-        Carlos: Programou o componente Menu
-      </Text>
-      <Text style = {styles.texto}>
-        Carlos: Programou o componente Menu
+        Samuel Souza: Estruturou o Projeto.
       </Text>
 
-      
     </View>
   )
 }
